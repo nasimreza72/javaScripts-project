@@ -2,10 +2,12 @@ function moneyReturner(cash, price) {
     let moneyReturn = cash - price;
     let restMoney = 0;
 
-    if (moneyReturn < 100 && moneyReturn > 90) {
+    if (moneyReturn <= 100 && moneyReturn > 90) {
         restMoney = moneyReturn - 90;
         if (restMoney > 5) {
-            if (restMoney > 9) {
+            if (restMoney == 10) {
+                return `1*100 euro.`
+            } else if (restMoney > 9) {
                 return `1*50 euro, 2*20 euros, 1*5 euro, 2*2 euros, ${coinsSorter(((restMoney-9).toPrecision(2)))}.`
             } else if (restMoney == 9) {
                 return `1*50 euro, 2*20 euros, 1*5 euro, 2*2 euros.`
@@ -47,10 +49,12 @@ function moneyReturner(cash, price) {
         }
     }
 
-    if (moneyReturn < 90 && moneyReturn > 80) {
+    if (moneyReturn <= 90 && moneyReturn > 80) {
         restMoney = moneyReturn - 80;
         if (restMoney > 5) {
-            if (restMoney > 9) {
+            if (restMoney == 10) {
+                return `1*50 euro, 2*20 euros.`
+            } else if (restMoney > 9) {
                 return `1*50 euro, 1*20 euro, 1*10 euro, 1*5 euro, 2*2 euros, ${coinsSorter(((restMoney-9).toPrecision(2)))}.`
             } else if (restMoney == 9) {
                 return `1*50 euro, 1*20 euro, 1*10 euro, 1*5 euro, 2*2 euros.`
@@ -93,10 +97,12 @@ function moneyReturner(cash, price) {
     }
     ///////////////////////////////// 1st ccccccccccccccc 
 
-    if (moneyReturn < 80 && moneyReturn > 70) {
+    if (moneyReturn <= 80 && moneyReturn > 70) {
         restMoney = moneyReturn - 70;
         if (restMoney > 5) {
-            if (restMoney > 9) {
+            if (restMoney == 10) {
+                return `1*50 euro, 1*20 euro, 1*20 euro.`
+            } else if (restMoney > 9) {
                 return `1*50 euro, 1*20 euro, 1*5 euro, 2*2 euros, ${coinsSorter(((restMoney-9).toPrecision(2)))}.`
             } else if (restMoney == 9) {
                 return `1*50 euro, 1*20 euro, 1*5 euro, 2*2 euros.`
@@ -139,10 +145,12 @@ function moneyReturner(cash, price) {
     }
     // 1*20 euro,/////////////////////////// 1st dddddddddddddddddddddddd
 
-    if (moneyReturn < 70 && moneyReturn > 60) {
+    if (moneyReturn <= 70 && moneyReturn > 60) {
         restMoney = moneyReturn - 60;
         if (restMoney > 5) {
-            if (restMoney > 9) {
+            if (restMoney == 10) {
+                return `1*50 euro, 1*20 euro.`
+            } else if (restMoney > 9) {
                 return `1*50 euro, 1*10 euro, 1*5 euro, 2*2 euros, ${coinsSorter(((restMoney-9).toPrecision(2)))}.`
             } else if (restMoney == 9) {
                 return `1*50 euro, 1*10 euro, 1*5 euro, 2*2 euros.`
@@ -185,10 +193,12 @@ function moneyReturner(cash, price) {
     }
     /////////////////////////////// 1st eeeeeeeeeee
 
-    if (moneyReturn < 60 && moneyReturn > 50) {
+    if (moneyReturn <= 60 && moneyReturn > 50) {
         restMoney = moneyReturn - 50;
         if (restMoney > 5) {
-            if (restMoney > 9) {
+            if (restMoney == 10) {
+                return `1*50 euro, 1*10 euro.`
+            } else if (restMoney > 9) {
                 return `1*50 euro, 1*5 euro, 2*2 euros, ${coinsSorter(((restMoney-9).toPrecision(2)))}.`
             } else if (restMoney == 9) {
                 return `1*50 euro, 1*5 euro, 2*2 euros.`
@@ -231,10 +241,12 @@ function moneyReturner(cash, price) {
     }
     ////////////////////////////  1st
 
-    if (moneyReturn < 50 && moneyReturn > 40) {
+    if (moneyReturn <= 50 && moneyReturn > 40) {
         restMoney = moneyReturn - 40;
         if (restMoney > 5) {
-            if (restMoney > 9) {
+            if (restMoney == 10) {
+                return `1*50 euro.`
+            } else if (restMoney > 9) {
                 return `2*20 euro, 1*5 euro, 2*2 euros, ${coinsSorter(((restMoney-9).toPrecision(2)))}.`
             } else if (restMoney == 9) {
                 return `2*20 euro, 1*5 euro, 2*2 euros.`
@@ -277,10 +289,12 @@ function moneyReturner(cash, price) {
     }
     ///////    2nd 
 
-    if (moneyReturn < 40 && moneyReturn > 30) {
+    if (moneyReturn <= 40 && moneyReturn > 30) {
         restMoney = moneyReturn - 30;
         if (restMoney > 5) {
-            if (restMoney > 9) {
+            if (restMoney == 10) {
+                return `2*20 euro.`
+            } else if (restMoney > 9) {
                 return `1*20 euro, 1*10 euro, 1*5 euro, 2*2 euros, ${coinsSorter(((restMoney-9).toPrecision(2)))}.`
             } else if (restMoney == 9) {
                 return `1*20 euro, 1*10 euro, 1*5 euro, 2*2 euros.`
@@ -323,10 +337,12 @@ function moneyReturner(cash, price) {
     }
     ///////////////////////  3rd
 
-    if (moneyReturn < 30 && moneyReturn > 20) {
+    if (moneyReturn <= 30 && moneyReturn > 20) {
         restMoney = moneyReturn - 20;
         if (restMoney > 5) {
-            if (restMoney > 9) {
+            if (restMoney == 10) {
+                return `1*20 euro, 1*10 euro.`
+            } else if (restMoney > 9) {
                 return `1*20 euro, 1*5 euro, 2*2 euros, ${coinsSorter(((restMoney-9).toPrecision(2)))}.`
             } else if (restMoney == 9) {
                 return `1*20 euro, 1*5 euro, 2*2 euros.`
@@ -370,10 +386,12 @@ function moneyReturner(cash, price) {
 
     ///////////////////// 4th
 
-    if (moneyReturn < 20 && moneyReturn > 10) {
+    if (moneyReturn <= 20 && moneyReturn > 10) {
         restMoney = moneyReturn - 10;
         if (restMoney > 5) {
-            if (restMoney > 9) {
+            if (restMoney == 10) {
+                return `1*20 euro.`
+            } else if (restMoney > 9) {
                 return `1*10 euro, 1*5 euro, 2*2 euros, ${coinsSorter(((restMoney-9).toPrecision(2)))}.`
             } else if (restMoney == 9) {
                 return `1*10 euro, 1*5 euro, 2*2 euros.`
@@ -393,7 +411,7 @@ function moneyReturner(cash, price) {
                 return `1*10 euro, 1*5 euro, ${coinsSorter(((restMoney-5).toPrecision(2)))}.`
             }
         } else if (restMoney == 5) {
-            return `1*10 euro and 1*5 euro.`
+            return `1*10 euro.`
         } else if (restMoney > 4) {
             return `1*10 euro, 2*2 euro, ${coinsSorter(((restMoney-4).toPrecision(2)))}.`
         } else if (restMoney == 4) {
@@ -417,10 +435,12 @@ function moneyReturner(cash, price) {
 
     ///////////////////////// 5th 
 
-    if (moneyReturn < 10 && moneyReturn > 0) {
+    if (moneyReturn <= 10 && moneyReturn > 0) {
         restMoney = moneyReturn - 0;
         if (restMoney > 5) {
-            if (restMoney > 9) {
+            if (restMoney == 10) {
+                return `1*10 euro.`
+            } else if (restMoney > 9) {
                 return `1*5 euro, 2*2 euros, ${coinsSorter(((restMoney-9).toPrecision(2)))}.`
             } else if (restMoney == 9) {
                 return `1*5 euro, 2*2 euros.`
@@ -706,4 +726,19 @@ function coinsSorter(coins) {
 
 }
 
-console.log(moneyReturner(100, 11.38));
+console.log(moneyReturner(20.5, 10));
+
+
+function myFunction() {
+    let cash = prompt("Amount of cash Paid:");
+    let purchased = prompt("total amount of purchased item:");
+    if (cash != null && purchased != null) {
+        document.getElementById("demo").innerHTML = moneyReturner(cash, purchased).split(",").map(item => item.replace("*", " time-->"));
+    }
+}
+
+console.log(myFunction());
+document.write(cash);
+document.write(purchased);
+
+

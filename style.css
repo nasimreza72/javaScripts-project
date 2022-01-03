@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+    min-height: 100vh;
+    width: 100%;
+    z-index: 1000;
+    color: rgb(255, 255, 255);
+}
+
+header {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#square {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: black;
+    animation-name: turner;
+    animation-duration: 1.515ms;
+    animation-iteration-count: infinite;
+    background: conic-gradient(from 180deg, rgba(255, 255, 255, 0.322), rgba(255, 255, 255, 0.425), rgb(255, 255, 255));
+    overflow: hidden;
+}
+
+@keyframes turner {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+#square::after {
+    content: "";
+    color: rgb(255, 0, 0);
+    font-size: x-large;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 8px;
+    height: 8px;
+    background-color: rgb(0, 0, 0);
+    z-index: 10;
+    overflow: hidden;
+}
+
+button {
+    font-size: large;
+    margin: auto;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 20px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+button:hover {
+    font-style: italic;
+    color: rgb(230, 199, 159);
+    background-color: rgba(11, 184, 175, 0.651);
+    border-right: 2px solid rgb(255, 255, 255);
+    border-left: 2px solid rgb(255, 255, 255);
+}
+
+p {
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

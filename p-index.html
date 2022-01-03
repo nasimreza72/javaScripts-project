@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom manipulation</title>
+</head>
+
+<body>
+
+    <h1 id="id01"></h1>
+    <h2 id="id02"></h2>
+
+    <h2>JavaScript HTML DOM</h2>
+    <img id="image"
+        src="https://images.ctfassets.net/hrltx12pl8hq/61DiwECVps74bWazF88Cy9/2cc9411d050b8ca50530cf97b3e51c96/Image_Cover.jpg?fit=fill&w=480&h=270"
+        width="160" height="120">
+
+    <script>
+        document.getElementById("image").src =
+            "https://us.123rf.com/450wm/fotografiecor/fotografiecor1911/fotografiecor191100062/133971542-pastel-toned-and-edible-with-a-magical-twist-wood-blewit-has-a-blue-to-violet-tinged-cap-and-gills-w.jpg?ver=6";
+    </script>
+
+    <p>The original image was smiley.gif, but the script changed it to landscape.jpg</p>
+
+
+    <script>
+        const element = document.getElementById("id01");
+        element.innerHTML = "Happy New Year 3033".split(" ")
+            .map(item => item.split("").map(item1 => item1.replace(3, 2)).join("")).join(" ");
+
+        const newDate = document.getElementById("id02")
+        newDate.innerHTML = new Date().getUTCFullYear()
+    </script>
+
+
+    <script>
+
+    </script>
+
+</body>
+
+</html>
